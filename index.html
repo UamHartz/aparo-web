@@ -17,6 +17,41 @@
             scroll-behavior: smooth;
         }
         
+        body {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        @media (max-width: 640px) {
+            .container {
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+            
+            section {
+                padding-left: 0.75rem !important;
+                padding-right: 0.75rem !important;
+            }
+            
+            .grid {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            
+            .flex {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+        }
+        
         .gradient-text {
             background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
             -webkit-background-clip: text;
